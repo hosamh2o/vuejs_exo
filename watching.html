@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<div id="app">
+	 
+	  <h1> 7oussamaddine {{isActive === 'active' ? 'is active': 'user ont active'}}</h1>
+	   
+</div>
+ 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+
+ <script>
+ 	var ff = new Vue({
+ 	 	el:'#app',
+ 	 	'data':{
+ 	 		isActive:'not active',
+ 	 	 
+ 	 	},
+ 	 	watch: {
+ 	 		isActive: function(newvalue){
+            console.log('sending e.mail - '+ newvalue);
+ 	 		}
+ 	 	}
+ 	 })
+ </script>

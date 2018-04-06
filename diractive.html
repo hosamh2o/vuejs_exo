@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<div id="app">
+	  <a :href="url">{{url}}</a>
+	  <!-- <h1 v-on:click="number++">{{number}}</h1>  
+	  <h1 v-on:click="number--">decrise</h1> -->
+
+	    <h1 @click="number++">{{number}}</h1>   <!-- onther option-->
+	  <h1 @click="number--">decrise</h1>
+	  <form action="" @submit.prevent="number++">
+	  <input type="submit">
+	  </form>
+</div>
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+
+ <script>
+ 	var ff = new Vue({
+ 	 	el:'#app',
+ 	 	'data':{
+ 	 		number: 00,
+ 	 		url:'https://google.com'
+ 	 		 
+ 	 	}
+ 	 })
+ </script>

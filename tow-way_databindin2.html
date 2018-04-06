@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="contener">
+	<div id="app">
+		<form action="">
+			<div class="col-sm-6">
+				<input v-model="options" type="text" class="forme-control">
+			</div>
+		</form>
+ <form action="">
+ 	 <fieldset>
+ 	 	<legend>RIDEO BUTTON</legend>
+ 	 	<div class="form-ckeck">
+ 	 		<label class="lable-form-lable">
+ 	 			<input v-model="options" type="checkbox" name="optionRideos1"  id="optionRideos1 " value="option-1"> 
+ 	 			ONE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim minus commodi illum, quidem, a deserunt, recusandae magnam repellendus, pariatur accusantium tempore! Facere deleniti, odit libero minus repudiandae maxime tenetur ipsam.
+ 	 		</label>
+ 	 	</div>
+ 	 		 	<div class="form-ckeck">
+ 	 		<label class="lable-form-lable">
+ 	 			<input v-model="options" type="checkbox" name="optionRideos1"  id="optionRideos2 " value="option-2"> 
+ 	 			 TOW Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim minus commodi illum, quidem, a deserunt, recusandae magnam repellendus, pariatur accusantium tempore! Facere deleniti, odit libero minus repudiandae maxime tenetur ipsam.
+ 	 		</label>
+ 	 	</div>
+ 	 		 	<div class="form-ckeck">
+ 	 		<label class="lable-form-lable">
+ 	 			<input v-model="options" type="checkbox" name="optionRideos1"  id="optionRideos3 " value="option-3"> 
+ 	 			 THREE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim minus commodi illum, quidem, a deserunt, recusandae magnam repellendus, pariatur accusantium tempore! Facere deleniti, odit libero minus repudiandae maxime tenetur ipsam.
+ 	 		</label>
+ 	 	</div>
+ 	 </fieldset>
+ 	 <p>your select {{options.join(' , ')}}</p>
+ </form>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+
+ <script>
+ 	var ff = new Vue({
+ 	 	el:'#app',
+ 	 	data:{
+ 	 	 
+ 	 		options:[], 
+ 	 		 
+ 	 	}
+ 	 })
+ </script>

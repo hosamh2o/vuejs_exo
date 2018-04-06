@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<div id="app">
+	 <ul>
+	 	<li v-for="post in posts" :key="post.id">{{post.title}}</li>
+	 <!-- 	<li v-for="post in posts" :key="post.id">{{post.name}}</li>
+	 <li v-for="post in posts" :key="post.id">{{post.id}}</li>
+	 <li v-for="post in posts" :key="post.id">{{post.value,}}</li> -->
+	 </ul>
+	   
+</div>
+ 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+
+ <script>
+ 	var ff = new Vue({
+ 	 	el:'#app',
+ 	 	'data':{
+ 	 	 posts :[
+            { id:1, title: 'post1',name:'hey vue js1', value: 'value1'},
+             { id:2, title: 'post2',name:'hey vue js2', value: 'value2'},
+              { id:3, title: 'post3',name:'hey vue js3', value: 'value3'},
+               { id:4, title: 'post4',name:'hey vue js4' ,value: 'value4'},
+                { id:5, title: 'post5',name:'hey vue js5', value: 'value5'},
+ 	 	 ]
+ 	 	}
+ 	 })
+ </script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+   <div id="app">
+	 <button @click="hit">§§</button>
+<button @click="increaseFont">increaseFont</button>
+<button @click="decreaseFont">decreaseFont</button>
+<div :style="{ fontColor:'red', fontSize:fontsize + 'px'}">{{name}}</div>
+<p>{{name}}</p>
+</div>
+ <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+
+ <script>
+ 	var ff = new Vue({
+ 	 	el:'#app',
+ 	 	data:{
+ 	  name: '7osam',
+ 	  fontsize:30,
+ 	 		 
+ 	 	},
+ 	 	methods:{
+ 	 		increaseFont(){
+ 	 			this.fontsize++;
+ 	 		
+ 	 	},
+ 	 	decreaseFont(){
+ 	 			this.fontsize--;
+ 	 	},
+ 	 	hit(){
+ 	 			this.fontsize++;
+ 	 	}
+	}
+ 	 })
+ </script>
